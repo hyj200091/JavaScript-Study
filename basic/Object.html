@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript对象</title>
+    <script>
+        /*访问对象属性的方式
+        */
+       var person ={
+           name:'hyj',
+           age:20,
+           height:116
+       }
+       var x = person.name;
+       var y =person['name'];
+       console.log(y);
+       
+       //用内置属性获取长度
+       var course ={name:'JS',lesson:11};
+       console.log(course.name.length);//输出为2
+
+       //更新对象属性方法
+       var outDog = {
+           name:'Camper',
+           age:'11',
+           legs:'3'
+       }
+       outDog.name='Happy Camper';
+       outDog['name'] = 'Happy Camper';
+       console.log(outDog);
+
+       //给对象田间属性
+       var outDog2 = {
+           name:'Camper',
+           age:'11',
+           legs:'3'
+       }
+      outDog2.dark='bow-www'
+       console.log(outDog2);
+       //删除对象属性 c1 等价于11
+       //var c1 = outDog2['age'];
+       //delete outDog2['age']这样就是删除了age这个属性
+
+
+       //对象方法
+       var a ='age';
+       var myObj={
+           name:'hhh',
+           age:'11',
+           eat:function(){
+               return 'i an eating'
+           }
+       }
+       console.log(myObj[a]); //返回11
+       console.log(myObj['name']);//返回 hhh
+       console.log(myObj['eat']());//返回 I are eating
+       
+       //访问对象函数
+       function Person(name,age) {
+           this.name=name
+           this.age=age
+           this.changName=function(name) {
+               this.name=name
+           }
+       }
+       var my = new Person('hjj',13)
+       my.changName('chang')
+       console.log(my)
+       
+       
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

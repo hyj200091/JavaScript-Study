@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript 语句循环</title>
+    <script>
+        //if-else 语句 可用于登入 
+        //如果密码错误 就在else 里面弹出警告框
+        var number =10;
+        if(number<20){
+            document.write("在线学习javascript 很简单！")
+        }
+
+        // if-else嵌套使用 
+        // 如果第一个条件是false 则可以使用else if语句指定新条件
+        var course =1;
+        if(course==1){
+            document.write("<h2>HTML 教程</h2>")
+        }else if(course==2){
+            document.write("<h2>css 教程</h2>")
+        }else {
+            document.write("<h2>javascript 教程</h2>")
+        }
+        /*
+         * switch 语句
+         switch 语句用于基于不同的条件来执行不同的动作
+         */ 
+        // var n;
+        // switch(n){
+        //     case 1:
+        //     document.write("1")
+        //     break;
+        //     case 2:
+        //         document.write("2")
+        //         break;
+        //     default:
+        //         document.write("n与case1 和 case2 都不匹配")    
+        // }
+
+        //for循环
+        var car = ['大众','奔驰','本田','哈弗'];
+        for(var i =0;i<car.length;i++){
+            document.write(car[i]+'</br>');
+        }
+
+        /*
+        *break循环 
+        */
+       var x ='';
+       for(var i =0;i<10;i++){
+           if(i==3){
+               break;
+           }
+           x = x+'the number is'+i+'</br>'
+       }
+       document.write(x);
+
+       /*
+        *continue语句 
+        *用来中断循环中的迭代 如果出现了指定的条件 然后继续循环中的下一个迭代 
+        *输出结果是 数值是3 输出了十遍
+        */
+       var x ='';
+       for(var j =0;j<=10;j++){
+           if(j==3){
+               continue;
+           }
+           x='数值是'+i+'</br>';
+           document.write(x);
+       }
+    </script>
+
+</head>
+<body>
+</body>
+</html>

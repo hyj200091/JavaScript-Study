@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript函数</title>
+    <script>
+        //声明函数
+        function functionName(a,b){
+            //函数中的代码
+            return a*b;
+        }
+        var res = functionName(3,4);
+        console.log(res);
+        
+        函数调用
+        function Myfunction() {
+            alert("调用的第一个函数")
+        }
+        Myfunction();
+
+        //多个参数
+        function sayHello(name,age) {
+            console.log(name+"年龄是："+age+"岁");
+        }
+        sayHello("john",12);
+        sayHello(12,"john");
+
+        /*
+        *javascript弹框
+        *
+        */
+       //提示框
+       var user =  prompt("请输入你的名字");
+       alert(user);
+
+       //confrim确认框
+       var result = confirm('确定离开这个页面');
+       if(result==true){
+           alert('感谢您的光临');
+       }else{
+           alert('继续查看这个页面');
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript数组练习</title>
+    <script>
+        //创建数组 并且赋值
+        var myCars=new Array('saab','Vovol')
+        //或者是这样来复制
+        var myCar = new Array();
+        myCar[0]='saad'
+        myCar[1]='Vovol'
+
+        //向数组中添加元素的方式 没有指定位置
+        var a =[];
+        a.push('zero')
+        a.push('one','two')
+
+        //数组中抛出末尾的值
+        var oneDown =[1,3,5].pop//运行结果就是数值变成了[1,3]
+
+        //数组中移除第一个元素的方法
+        var ont = [2,3,4].shift//运行结果就是[3,4]
+
+        //向数组头部添加元素的方式
+        var b =['zero'];
+        b.unshift('one')//运行结果是['one','zero']
+
+        //将两个数组连接起来的方法
+        var c1 =['hyj']
+        var c2=['hj']
+        var liangjie = c1.concat(c2);
+
+        //返回某个指定位置的元素位置
+        var fruits =['香蕉','苹果']
+        var a = fruits.indexOf('苹果')//a的值是1
+        var b = fruits.indexOf('西瓜')//数组中不存在的就返回a的值是-1
+
+
+        //截取指定片段的字符串
+        var car =['banner','lemoe','apple']
+        var jiequ = car.slice(0,2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
